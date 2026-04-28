@@ -6,6 +6,10 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-04-27
+
+First public release.
+
 ### Added
 - Initial scaffold: package layout, Apache-2.0 license, CI config, Makefile.
 - Numerical core: log-stable elementary symmetric functions for CML.

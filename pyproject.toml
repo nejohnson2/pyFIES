@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "pyfies"
-version = "0.1.0.dev0"
+version = "0.1.0"
 description = "Python implementation of FAO's Food Insecurity Experience Scale (FIES) — weighted Rasch model, equating to the global standard, and prevalence estimation for SDG indicator 2.1.2."
 readme = "README.md"
 requires-python = ">=3.11"

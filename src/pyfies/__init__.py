@@ -14,7 +14,7 @@ from pyfies.items import DEFAULT_FIES_ITEMS
 from pyfies.model import RaschModel
 from pyfies.standards import FAO_2014_2016
 
-__version__ = "0.1.0.dev0"
+__version__ = "0.1.0"
 
 __all__ = [
     "DEFAULT_FIES_ITEMS",
