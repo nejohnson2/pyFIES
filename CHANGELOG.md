@@ -6,6 +6,13 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-04-27
+
+### Fixed
+- `Documentation` project URL on PyPI now points to the published docs site
+  (https://nejohnson2.github.io/pyFIES/) instead of the GitHub README anchor
+  it was originally seeded with.
+
 ## [0.1.0] - 2026-04-27
 
 First public release.
