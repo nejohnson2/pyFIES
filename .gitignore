@@ -1,0 +1,76 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+wheels/
+.installed.cfg
+*.manifest
+*.spec
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Secrets & env
+.env
+.env.local
+*.pem
+credentials.json
+
+# Data (user must explicitly opt-in to commit)
+data/
+*.csv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+
+# Models & artifacts
+models/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.joblib
+
+# Logs
+logs/
+*.log
+
+# Docs build
+site/
+docs/_build/

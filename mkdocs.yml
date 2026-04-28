@@ -1,0 +1,96 @@
+site_name: pyFIES
+site_description: Python implementation of FAO's Food Insecurity Experience Scale (SDG 2.1.2).
+site_author: Nicholas E. Johnson
+site_url: https://nejohnson2.github.io/pyFIES/
+repo_url: https://github.com/nejohnson2/pyFIES
+repo_name: nejohnson2/pyFIES
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 Nicholas E. Johnson and pyFIES contributors
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: green
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Quickstart: quickstart.md
+  - Methodology: methodology.md
+  - Parity with RM.weights: parity.md
+  - API reference:
+      - api/index.md
+      - RaschModel: api/model.md
+      - Standards: api/standards.md
+      - Numerical core: api/core.md
+  - Contributing: contributing.md
+  - Changelog: changelog.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            show_if_no_docstring: false
+            show_signature_annotations: true
+            separate_signature: true
+            line_length: 88
+            members_order: source
+            heading_level: 2
+          paths: [src]
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/nejohnson2/pyFIES
