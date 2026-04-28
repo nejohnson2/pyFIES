@@ -52,9 +52,17 @@ docs = [
     "mkdocs>=1.5",
     "mkdocs-material>=9.5",
     "mkdocstrings[python]>=0.24",
+    "mkdocs-jupyter>=0.24",
 ]
 plot = [
     "matplotlib>=3.7",
+]
+notebooks = [
+    "matplotlib>=3.7",
+    "jupyter>=1.0",
+    "nbformat>=5.9",
+    "nbconvert>=7.10",
+    "ipykernel>=6.25",
 ]
 
 [project.urls]

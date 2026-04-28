@@ -41,6 +41,8 @@ nav:
   - Home: index.md
   - Quickstart: quickstart.md
   - Methodology: methodology.md
+  - Tutorials:
+      - End-to-end with FAO sample data: notebooks/01_parity_demo.ipynb
   - Parity with RM.weights: parity.md
   - API reference:
       - api/index.md
@@ -52,6 +54,10 @@ nav:
 
 plugins:
   - search
+  - mkdocs-jupyter:
+      include_source: true
+      execute: false
+      include_requirejs: true
   - mkdocstrings:
       handlers:
         python:

@@ -1,4 +1,4 @@
-.PHONY: help install dev test test-parity lint format type clean fixtures docs docs-serve
+.PHONY: help install dev test test-parity lint format type clean fixtures docs docs-serve notebook
 
 help:
 	@echo "pyFIES — common dev targets"
@@ -12,6 +12,7 @@ help:
 	@echo "  make fixtures     # regenerate R reference fixtures (requires R)"
 	@echo "  make docs         # build the documentation site"
 	@echo "  make docs-serve   # serve docs locally with live-reload at :8000"
+	@echo "  make notebook     # rebuild and re-execute the demo notebook"
 	@echo "  make clean        # remove build/cache artifacts"
 
 install:
@@ -44,6 +45,11 @@ docs:
 
 docs-serve:
 	mkdocs serve
+
+notebook:
+	python scripts/build_demo_notebook.py
+	jupyter nbconvert --execute --inplace --ExecutePreprocessor.timeout=120 \
+		notebooks/01_parity_demo.ipynb
 
 clean:
 	rm -rf build/ dist/ *.egg-info src/*.egg-info

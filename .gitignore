@@ -74,3 +74,4 @@ logs/
 # Docs build
 site/
 docs/_build/
+.cache/
