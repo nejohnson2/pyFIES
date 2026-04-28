@@ -1,5 +1,12 @@
 # pyFIES
 
+[![PyPI](https://img.shields.io/pypi/v/pyfies.svg)](https://pypi.org/project/pyfies/)
+[![Python](https://img.shields.io/pypi/pyversions/pyfies.svg)](https://pypi.org/project/pyfies/)
+[![CI](https://github.com/nejohnson2/pyFIES/actions/workflows/ci.yml/badge.svg)](https://github.com/nejohnson2/pyFIES/actions/workflows/ci.yml)
+[![Docs](https://img.shields.io/badge/docs-mkdocs--material-blue)](https://nejohnson2.github.io/pyFIES/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19838795.svg)](https://doi.org/10.5281/zenodo.19838795)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+
 Python implementation of FAO's **Food Insecurity Experience Scale (FIES)** — the
 methodology behind UN SDG indicator **2.1.2** (prevalence of moderate-or-severe
 and severe food insecurity in the population).
@@ -17,7 +24,7 @@ assignment along the latent food-insecurity trait.
 ## Installation
 
 ```bash
-pip install pyfies          # from PyPI (once published)
+pip install pyfies          # from PyPI
 pip install -e ".[dev]"     # editable install with dev tooling
 ```
 
@@ -71,13 +78,26 @@ required, one-time):
 Rscript scripts/generate_r_fixtures.R
 ```
 
-Default tolerance: `atol=1e-6` on item severities and prevalence rates.
+Tolerances: `atol=2e-4` on item severities, `atol=5e-3` on prevalence rates
+(typically achieved within 0.3 percentage points). See
+[Parity](https://nejohnson2.github.io/pyFIES/parity/) for details.
 
 ## Citing
 
-If you use pyFIES in published research, please cite both this package and the
-underlying FAO methodology (Cafiero et al., 2018). A `CITATION.cff` file will be
-added at first stable release.
+If you use pyFIES in published research, please cite both the package and the
+underlying FAO methodology. The package's "Cite this repository" button on
+GitHub (powered by [`CITATION.cff`](CITATION.cff)) will give you the
+package citation in BibTeX, APA, and other formats. The Zenodo Concept DOI
+
+> [10.5281/zenodo.19838795](https://doi.org/10.5281/zenodo.19838795)
+
+always resolves to the latest release. To pin to a specific version, use the
+version-specific DOI shown on the [Zenodo record page](https://doi.org/10.5281/zenodo.19838795).
+
+For the underlying methodology, cite Cafiero, C., Viviani, S., & Nord, M.
+(2018). *Food security measurement in a global context: The Food Insecurity
+Experience Scale.* Measurement, 116, 146–152.
+[doi:10.1016/j.measurement.2017.10.065](https://doi.org/10.1016/j.measurement.2017.10.065).
 
 ## License
 

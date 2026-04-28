@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use pyFIES in published research, please cite it as below, and also cite the underlying FIES methodology (Cafiero, Viviani, & Nord, 2018; doi:10.1016/j.measurement.2017.10.065)."
+type: software
+title: "pyFIES: Python implementation of FAO's Food Insecurity Experience Scale"
+abstract: >-
+  pyFIES is a Python package for computing UN SDG indicator 2.1.2 (the prevalence of
+  moderate-or-severe and severe food insecurity) from raw survey responses. It
+  implements FAO's official methodology: a weighted Conditional Maximum Likelihood
+  Rasch model, equating to the FAO 2014–2016 global standard, and probabilistic
+  prevalence assignment along the latent food-insecurity trait. Numerical results
+  are validated against the R reference implementation (RM.weights).
+authors:
+  - family-names: Johnson
+    given-names: Nicholas E.
+    email: nicholas.e.johnson@stonybrook.edu
+    affiliation: Stony Brook University
+repository-code: "https://github.com/nejohnson2/pyFIES"
+url: "https://nejohnson2.github.io/pyFIES/"
+license: Apache-2.0
+version: 0.1.1
+date-released: "2026-04-27"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.19838795
+    description: Concept DOI (resolves to the latest archived release)
+keywords:
+  - food insecurity
+  - food security measurement
+  - FIES
+  - SDG 2.1.2
+  - Rasch model
+  - item response theory
+  - psychometrics
+  - survey analysis
+  - FAO
+references:
+  - type: article
+    authors:
+      - family-names: Cafiero
+        given-names: Carlo
+      - family-names: Viviani
+        given-names: Sara
+      - family-names: Nord
+        given-names: Mark
+    title: "Food security measurement in a global context: The Food Insecurity Experience Scale"
+    journal: Measurement
+    volume: 116
+    start: 146
+    end: 152
+    year: 2018
+    doi: 10.1016/j.measurement.2017.10.065
